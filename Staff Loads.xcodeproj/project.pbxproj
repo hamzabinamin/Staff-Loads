@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4153026297FEB34005A2255 /* FlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4153025297FEB34005A2255 /* FlightsView.swift */; };
+		F4153028297FEBA4005A2255 /* ListDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4153027297FEBA4005A2255 /* ListDesign.swift */; };
 		F42756942937A2FD000B8DB5 /* Staff_LoadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756932937A2FD000B8DB5 /* Staff_LoadsApp.swift */; };
 		F42756962937A2FD000B8DB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756952937A2FD000B8DB5 /* ContentView.swift */; };
 		F42756982937A2FE000B8DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42756972937A2FE000B8DB5 /* Assets.xcassets */; };
@@ -14,6 +16,11 @@
 		F42756A62937A2FE000B8DB5 /* Staff_LoadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756A52937A2FE000B8DB5 /* Staff_LoadsTests.swift */; };
 		F42756B02937A2FE000B8DB5 /* Staff_LoadsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756AF2937A2FE000B8DB5 /* Staff_LoadsUITests.swift */; };
 		F42756B22937A2FE000B8DB5 /* Staff_LoadsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756B12937A2FE000B8DB5 /* Staff_LoadsUITestsLaunchTests.swift */; };
+		F42756C0293B7D83000B8DB5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756BF293B7D83000B8DB5 /* UIColor.swift */; };
+		F42756CA2950BDCA000B8DB5 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42756C92950BDCA000B8DB5 /* Flight.swift */; };
+		F42756CD2954A516000B8DB5 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = F42756CC2954A516000B8DB5 /* SwiftSoup */; };
+		F466E9A7298D4E8900140E5F /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466E9A6298D4E8900140E5F /* UINavigationController.swift */; };
+		F4E6D872297DA2CA00D19920 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D871297DA2CA00D19920 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4153025297FEB34005A2255 /* FlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsView.swift; sourceTree = "<group>"; };
+		F4153027297FEBA4005A2255 /* ListDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDesign.swift; sourceTree = "<group>"; };
 		F42756902937A2FD000B8DB5 /* Staff Loads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staff Loads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42756932937A2FD000B8DB5 /* Staff_LoadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff_LoadsApp.swift; sourceTree = "<group>"; };
 		F42756952937A2FD000B8DB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +54,10 @@
 		F42756AB2937A2FE000B8DB5 /* Staff LoadsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Staff LoadsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42756AF2937A2FE000B8DB5 /* Staff_LoadsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff_LoadsUITests.swift; sourceTree = "<group>"; };
 		F42756B12937A2FE000B8DB5 /* Staff_LoadsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff_LoadsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F42756BF293B7D83000B8DB5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		F42756C92950BDCA000B8DB5 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		F466E9A6298D4E8900140E5F /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		F4E6D871297DA2CA00D19920 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42756CD2954A516000B8DB5 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +109,10 @@
 		F42756922937A2FD000B8DB5 /* Staff Loads */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6D877297EDD1300D19920 /* SwiftUI Views */,
+				F42756C82950BD8C000B8DB5 /* Data Models */,
+				F42756BE293B7D65000B8DB5 /* Extensions */,
 				F42756932937A2FD000B8DB5 /* Staff_LoadsApp.swift */,
-				F42756952937A2FD000B8DB5 /* ContentView.swift */,
 				F42756972937A2FE000B8DB5 /* Assets.xcassets */,
 				F42756992937A2FE000B8DB5 /* Staff_Loads.entitlements */,
 				F427569A2937A2FE000B8DB5 /* Preview Content */,
@@ -129,6 +145,34 @@
 			path = "Staff LoadsUITests";
 			sourceTree = "<group>";
 		};
+		F42756BE293B7D65000B8DB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F42756BF293B7D83000B8DB5 /* UIColor.swift */,
+				F4E6D871297DA2CA00D19920 /* View.swift */,
+				F466E9A6298D4E8900140E5F /* UINavigationController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F42756C82950BD8C000B8DB5 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				F42756C92950BDCA000B8DB5 /* Flight.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		F4E6D877297EDD1300D19920 /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				F42756952937A2FD000B8DB5 /* ContentView.swift */,
+				F4153025297FEB34005A2255 /* FlightsView.swift */,
+				F4153027297FEBA4005A2255 /* ListDesign.swift */,
+			);
+			path = "SwiftUI Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +189,9 @@
 			dependencies = (
 			);
 			name = "Staff Loads";
+			packageProductDependencies = (
+				F42756CC2954A516000B8DB5 /* SwiftSoup */,
+			);
 			productName = "Staff Loads";
 			productReference = F42756902937A2FD000B8DB5 /* Staff Loads.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +264,9 @@
 				Base,
 			);
 			mainGroup = F42756872937A2FD000B8DB5;
+			packageReferences = (
+				F42756CB2954A516000B8DB5 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = F42756912937A2FD000B8DB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42756962937A2FD000B8DB5 /* ContentView.swift in Sources */,
+				F466E9A7298D4E8900140E5F /* UINavigationController.swift in Sources */,
+				F42756CA2950BDCA000B8DB5 /* Flight.swift in Sources */,
+				F4153026297FEB34005A2255 /* FlightsView.swift in Sources */,
+				F4E6D872297DA2CA00D19920 /* View.swift in Sources */,
+				F4153028297FEBA4005A2255 /* ListDesign.swift in Sources */,
+				F42756C0293B7D83000B8DB5 /* UIColor.swift in Sources */,
 				F42756942937A2FD000B8DB5 /* Staff_LoadsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,14 +467,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Staff Loads/Staff_Loads.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Staff Loads/Preview Content\"";
 				DEVELOPMENT_TEAM = RMEHNGJ9PR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,13 +485,13 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fulltrade.Staff-Loads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -449,14 +507,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Staff Loads/Staff_Loads.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Staff Loads/Preview Content\"";
 				DEVELOPMENT_TEAM = RMEHNGJ9PR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,13 +525,13 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fulltrade.Staff-Loads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -612,6 +672,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F42756CB2954A516000B8DB5 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F42756CC2954A516000B8DB5 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F42756CB2954A516000B8DB5 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F42756882937A2FD000B8DB5 /* Project object */;
 }
