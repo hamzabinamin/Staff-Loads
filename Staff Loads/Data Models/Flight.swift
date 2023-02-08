@@ -42,12 +42,14 @@ class Flight: Identifiable {
         seats = ""
     }
     
-    func getNumberOfSeatsPerClass(flightClass: String) -> String {
+    func getNumberOfSeatsPerClass(flightClass: String) -> [String:Any] {
         // F first
         // J busimess
         //  W premium economy
         //  Y economy
         var string = "0"
+        var dictionary = [String: Any]()
+    
         if seats.contains(flightClass) {
             if let index = seats.range(of: flightClass)?.upperBound {
                 let endIndex = seats.index(index, offsetBy: 1)
@@ -55,7 +57,36 @@ class Flight: Identifiable {
                 string = String(substring)
             }
         }
-        return string
+        let numberAsInt = Int(string) ?? 0
+        let color = getClassColor(flightClass: numberAsInt)
+        string = "\(numberAsInt)"
+        
+        if string == "9" {
+            string = "9+"
+        }
+        
+        dictionary["seats"] = string
+        dictionary["color"] = color
+       
+       // 3-8 yellow
+       // 0-2 red
+        
+        return dictionary
+    }
+    
+    func getClassColor(flightClass: Int) -> Int {
+        var color = 0xFFFFFF
+        
+        if flightClass >= 0 && flightClass <= 2 {
+            color = 0xFF0000
+        }
+        else if flightClass >= 3 && flightClass <= 8 {
+            color = 0xFFFF00
+        }
+        else {
+            color = 0x39FF14
+        }
+        return color
     }
     
 }

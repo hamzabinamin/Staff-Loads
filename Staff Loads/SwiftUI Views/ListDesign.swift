@@ -82,25 +82,30 @@ struct ListDesign: View {
                 }
                 .padding(15)
                 
+                let f = flight.getNumberOfSeatsPerClass(flightClass: "F")
+                let j = flight.getNumberOfSeatsPerClass(flightClass: "J")
+                let w = flight.getNumberOfSeatsPerClass(flightClass: "W")
+                let y = flight.getNumberOfSeatsPerClass(flightClass: "Y")
+                
                 HStack(spacing: 10.0) {
-                    Text("F: " + flight.getNumberOfSeatsPerClass(flightClass: "F"))
+                    Text("F: " + "\(f["seats"] ?? "0")")
                         .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.init(uiColor: UIColor(rgb: f["color"] as! Int)))
                         .font(.system(size: 15.0)).bold()
                 
-                    Text("J: " + flight.getNumberOfSeatsPerClass(flightClass: "J"))
+                    Text("J: " + "\(j["seats"] ?? "0")")
                         .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.init(uiColor: UIColor(rgb: j["color"] as! Int)))
                         .font(.system(size: 15.0)).bold()
                     
-                    Text("W: " + flight.getNumberOfSeatsPerClass(flightClass: "W"))
+                    Text("W: " + "\(w["seats"] ?? "0")")
                         .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.init(uiColor: UIColor(rgb: w["color"] as! Int)))
                         .font(.system(size: 15.0)).bold()
                     
-                    Text("Y: " + flight.getNumberOfSeatsPerClass(flightClass: "Y"))
+                    Text("Y: " + "\(y["seats"] ?? "0")")
                         .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.init(uiColor: UIColor(rgb: y["color"] as! Int)))
                         .font(.system(size: 15.0)).bold()
                 }
                 .padding(15)
